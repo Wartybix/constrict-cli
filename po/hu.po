@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Constrict main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Constrict/-/issues\n"
-"POT-Creation-Date: 2026-02-13 14:25+0000\n"
-"PO-Revision-Date: 2026-03-07 23:13+0100\n"
+"POT-Creation-Date: 2026-07-01 05:48+0000\n"
+"PO-Revision-Date: 2026-09-08 23:50+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: data/io.github.wartybix.Constrict.desktop.in:2
 #: data/io.github.wartybix.Constrict.metainfo.xml.in:8 src/window.blp:16
-#: src/window.blp:42 src/window.blp:104 src/window.py:391
+#: src/window.blp:42 src/window.blp:104 src/window.py:410
 msgid "Constrict"
 msgstr "Szűkítő"
 
@@ -187,8 +187,8 @@ msgstr "A tömörített fájl mérete túl nagy volt ({size} {unit})"
 
 #. TRANSLATORS: this is the SI unit for 'mebibyte'.
 #: src/attempt_fail_box.py:95 src/attempt_fail_box.py:105
-#: src/sources_row.py:498 src/sources_row.py:527 src/sources_row.py:530
-#: src/sources_row.py:545 src/window.py:246
+#: src/sources_row.py:508 src/sources_row.py:537 src/sources_row.py:540
+#: src/sources_row.py:555 src/window.py:256
 msgid "MiB"
 msgstr "MiB"
 
@@ -199,7 +199,7 @@ msgstr "MiB"
 msgid "Compressed file size was too small ({size} {unit})"
 msgstr "A tömörített fájl mérete túl kicsi volt ({size} {unit})"
 
-#: src/constrict_utils.py:781
+#: src/constrict_utils.py:821
 msgid ""
 "Constrict: Could not read input file. Was it moved or deleted before "
 "compression?"
@@ -207,7 +207,7 @@ msgstr ""
 "Szűkítő: Nem sikerült olvasni a bemeneti fájlt. Áthelyezték vagy törölték a "
 "tömörítés előtt?"
 
-#: src/constrict_utils.py:804
+#: src/constrict_utils.py:845
 msgid ""
 "Constrict: Could not retrieve video properties. Source video may be missing "
 "or corrupted."
@@ -217,7 +217,7 @@ msgstr ""
 
 #. This should never happen if a unique file name has been passed to
 #. this function as file_output.
-#: src/constrict_utils.py:811
+#: src/constrict_utils.py:852
 msgid ""
 "Constrict: Could not create exported file. A file with the reserved name "
 "already exists."
@@ -225,7 +225,7 @@ msgstr ""
 "Szűkítő: Nem sikerült létrehozni az exportált fájlt. A foglalt névvel "
 "rendelkező fájl már létezik."
 
-#: src/constrict_utils.py:813
+#: src/constrict_utils.py:854
 msgid ""
 "Constrict: Could not create exported file. There are insufficient "
 "permissions to create a file at the requested export path."
@@ -233,7 +233,7 @@ msgstr ""
 "Szűkítő: Nem sikerült létrehozni az exportált fájlt. Nincsenek elegendő "
 "jogosultságok a kért exportálási útvonalon történő fájl létrehozásához."
 
-#: src/constrict_utils.py:879
+#: src/constrict_utils.py:921
 msgid ""
 "Constrict: Video bitrate got too low (<5 kbps). The target size may be too "
 "low for this file."
@@ -241,7 +241,7 @@ msgstr ""
 "Szűkítő: A videó bitsebessége túl alacsony lett (<5 kbps). Lehet, hogy a "
 "célméret túl kicsi ennél a fájlnál."
 
-#: src/constrict_utils.py:924
+#: src/constrict_utils.py:966
 msgid ""
 "Constrict: Cannot read output file. Was it moved or deleted mid-compression?"
 msgstr ""
@@ -392,20 +392,23 @@ msgid "compressed"
 msgstr "tömörített"
 
 #. TRANSLATORS: Braces represent the name of the repository (e.g. 8mb)
-#: src/main.py:184
+#. This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:186
 msgid "‘{}’ repository by"
 msgstr "„{}” tároló:"
 
-#: src/main.py:191
+#. TRANSLATORS: This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:194
 msgid "Circular progress indicator design by"
 msgstr "Kör alakú haladásjelző kialakítása:"
 
-#: src/main.py:195
+#. TRANSLATORS: This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:199
 msgid "Drag overlay design by"
 msgstr "Húzási rátét kialakítása:"
 
 #. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-#: src/main.py:202
+#: src/main.py:206
 msgid "translator-credits"
 msgstr "Úr Balázs <ur dot balazs at fsf dot hu>, 2026."
 
@@ -417,32 +420,37 @@ msgstr "Beállítások"
 msgid "Hardware Acceleration"
 msgstr "Hardveres gyorsítás"
 
-#: src/preferences_dialog.blp:11
-msgid ""
-"Hardware acceleration is only used if your GPU supports encoding with the "
-"selected video codec, and “Extra Quality” is disabled"
-msgstr ""
-"A hardveres gyorsítás csak akkor használható, ha a GPU támogatja a "
-"kiválasztott videokodekkel történő kódolást, és az „Extra minőség” le van "
-"tiltva"
-
-#: src/preferences_dialog.blp:14
+#: src/preferences_dialog.blp:13
 msgid "GPU Encoding"
 msgstr "GPU-kódolás"
 
-#: src/preferences_dialog.blp:15
+#: src/preferences_dialog.blp:14
 msgid "Use the GPU to speed up encoding when available"
 msgstr "A GPU használata a kódolás felgyorsításához, ha elérhető"
 
-#: src/preferences_dialog.blp:20
+#: src/preferences_dialog.blp:19
 msgid "Exported Video Suffix"
 msgstr "Exportált videó utótagja"
 
-#: src/preferences_dialog.blp:23
+#: src/preferences_dialog.blp:22
 msgid "Custom Suffix"
 msgstr "Egyéni utótag"
 
-#: src/preferences_dialog.py:42
+#. TRANSLATORS: {} represents a resolution, like '360p'.
+#: src/preferences_dialog.py:43
+#| msgid ""
+#| "Hardware acceleration is only used if your GPU supports encoding with the "
+#| "selected video codec, and “Extra Quality” is disabled"
+msgid ""
+"Hardware acceleration is only used if your GPU supports encoding with the "
+"selected video codec. Additionally, it’s only used when compressing to {} or "
+"higher, with “Extra Quality” disabled."
+msgstr ""
+"A hardveres gyorsítás csak akkor használható, ha a GPU támogatja a kiválasztot"
+"t videokodekkel történő kódolást. Ezenkívül csak {} vagy nagyobb értékre való "
+"tömörítéskor van használva, az „Extra minőség” letiltásával."
+
+#: src/preferences_dialog.py:49
 msgid ""
 "Used in file names for exported videos, between the base name and extension. "
 "If the custom suffix is left empty, the default suffix of “{}” will be used."
@@ -451,7 +459,7 @@ msgstr ""
 "között. Ha az egyéni utótag üresen marad, akkor a(z) „{}” alapértelmezett "
 "utótagja lesz használva."
 
-#: src/preferences_dialog.py:64
+#: src/preferences_dialog.py:71
 msgid "Changes applied"
 msgstr "Változtatások alkalmazva"
 
@@ -471,7 +479,7 @@ msgstr "Mozgatás _le"
 msgid "_Remove"
 msgstr "_Eltávolítás"
 
-#: src/sources_row.blp:44 src/sources_row.blp:57 src/sources_row.py:448
+#: src/sources_row.blp:44 src/sources_row.blp:57 src/sources_row.py:458
 msgid "View Error Details"
 msgstr "Hiba részleteinek megtekintése"
 
@@ -495,13 +503,14 @@ msgstr "Fájl helyének megjelenítése"
 msgid "View More"
 msgstr "Több megtekintése"
 
-#: src/sources_row.py:471 src/window.blp:137 src/window.blp:218
+#: src/sources_row.py:481 src/window.blp:137 src/window.blp:200
+#: src/window.blp:240
 msgid "More Information"
 msgstr "További információk"
 
 #. TRANSLATORS: {size} represents a file size value in MB.
 #. {unit} represents a file size unit, like 'MiB'.
-#: src/sources_row.py:495
+#: src/sources_row.py:505
 #, python-brace-format
 msgid "Video compressed to {size} {unit}."
 msgstr "A videó {size} {unit} méretre tömörítve."
@@ -509,7 +518,7 @@ msgstr "A videó {size} {unit} méretre tömörítve."
 #. TRANSLATORS: {original_size} and {target_size} represent
 #. integers. {unit_original} and {unit_target} represent file
 #. size units, like 'MB'.
-#: src/sources_row.py:523
+#: src/sources_row.py:533
 #, python-brace-format
 msgid ""
 "Video file size ({original_size} {unit_original}) already meets the target "
@@ -520,7 +529,7 @@ msgstr ""
 
 #. TRANSLATORS: {size} represents an integer. {unit} represents
 #. a file size unit like 'MB'.
-#: src/sources_row.py:543
+#: src/sources_row.py:553
 #, python-brace-format
 msgid "Target size ({size} {unit}) is too low for this file."
 msgstr "A célméret ({size} {unit}) túl kicsi ennél a fájlnál."
@@ -578,63 +587,63 @@ msgstr "Simább mozgás biztosítása"
 msgid "Encoding Options"
 msgstr "Kódolási beállítások"
 
-#: src/window.blp:198
+#: src/window.blp:220
 msgid "_Video Codec"
 msgstr "_Videokodek"
 
-#: src/window.blp:206
+#: src/window.blp:228
 msgid "Extra _Quality"
 msgstr "Extra _minőség"
 
-#: src/window.blp:208
+#: src/window.blp:230
 msgid "Increase image quality at the cost of compression time"
 msgstr "A képminőség javítása a tömörítési idő rovására"
 
-#: src/window.blp:213
+#: src/window.blp:235
 msgid "Advanced Options"
 msgstr "Speciális beállítások"
 
-#: src/window.blp:238
+#: src/window.blp:260
 msgid "_Tolerance (%)"
 msgstr "_Tűréshatár (%)"
 
-#: src/window.blp:240
+#: src/window.blp:262
 msgid "How far end file sizes can be below target"
 msgstr "Mennyivel lehet a végső fájlméret a célérték alatt"
 
-#: src/window.blp:264
+#: src/window.blp:286
 msgid "Toggle Settings Pane"
 msgstr "Beállítások ablaktábla ki- és bekapcsolása"
 
-#: src/window.blp:274
+#: src/window.blp:296
 msgid "Issues with video sources — fix before compressing"
 msgstr "Problémák vannak a videoforrásokkal – javítsa a tömörítés előtt"
 
-#: src/window.blp:300
+#: src/window.blp:322
 msgid "Video Sources"
 msgstr "Videoforrások"
 
-#: src/window.blp:304
+#: src/window.blp:326
 msgid "_Clear All"
 msgstr "Összes _törlése"
 
-#: src/window.blp:325
+#: src/window.blp:347
 msgid "_Export To…"
 msgstr "_Exportálás ide…"
 
-#: src/window.blp:341
+#: src/window.blp:363
 msgid "_Cancel…"
 msgstr "_Mégse…"
 
 #. TRANSLATORS: 'FPS' meaning 'frames per second'.
 #. {} represents the FPS value, for example 30 or 60.
-#: src/window.py:224
+#: src/window.py:230
 msgid "{} FPS"
 msgstr "{} FPS"
 
 #. TRANSLATORS: FPS meaning 'frames per second'. {} represents an
 #. integer.
-#: src/window.py:232
+#: src/window.py:238
 msgid ""
 "Videos compressed to low bitrates may be capped to {} FPS, regardless of the "
 "option set."
@@ -642,8 +651,20 @@ msgstr ""
 "Az alacsony bitsebességre tömörített videók {} FPS-re lehetnek korlátozva, "
 "függetlenül a beállított lehetőségtől."
 
+#: src/window.py:243
+msgid ""
+"H.264 is recommended for resolutions up to 1080p.\n"
+"\n"
+"H.265 (HEVC), AV1, and VP9, are optimized for resolutions of 1080p and "
+"higher."
+msgstr ""
+"H.264 ajánlott a legfeljebb 1080p felbontásokhoz.\n"
+"\n"
+"A H.265 (HEVC), AV1 és VP9 az 1080p és magasabb felbontásokhoz van optimalizál"
+"va."
+
 #. TRANSLATORS: {} represents an integer.
-#: src/window.py:241
+#: src/window.py:251
 #, no-python-format
 msgid ""
 "Decreasing the tolerance maximizes image quality by reducing how much "
@@ -657,110 +678,118 @@ msgstr ""
 "a tömörítési időt. {}% vagy nagyobb tűréshatár ajánlott."
 
 #. TRANSLATORS: {} represents a file size unit (e.g. 'MiB')
-#: src/window.py:249
+#: src/window.py:259
 msgid "Target _Size ({})"
 msgstr "Cél_méret ({})"
 
-#. TRANSLATORS: {} represents the filename of the video currently
+#. TRANSLATORS: {} represents the file name of the video currently
 #. being processed.
-#: src/window.py:365
+#: src/window.py:382
 msgid "Processing “{}”"
 msgstr "A(z) „{}” feldolgozása"
 
-#. TRANSLATORS: {index} represents the index of the video
-#. currently being processed. {total} represents the total
+#. TRANSLATORS: {index} represents the index of
+#. the video currently being processed. {total} represents the total
 #. number of videos being processed.
-#: src/window.py:371
+#: src/window.py:390
 #, python-brace-format
-msgid "{index}/{total} Videos Processed"
-msgstr "{index}/{total} videó feldolgozva"
+#| msgid "{index}/{total} Videos Processed"
+msgid "{index}/{total} Video Processed"
+msgid_plural "{index}/{total} Videos Processed"
+msgstr[0] "{index}/{total} videó feldolgozva"
+msgstr[1] "{index}/{total} videó feldolgozva"
 
 #. TRANSLATORS: {} represents the path of the directory being
 #. exported to.
-#: src/window.py:381
+#: src/window.py:400
 msgid "Exporting to {}"
 msgstr "Exportálás ide: {}"
 
-#. TRANSLATORS: {} represents the filename of the video currently
-#. queued.
-#: src/window.py:396
+#. TRANSLATORS: {} represents the name of a video file.
+#: src/window.py:413
 msgid "“{}” Queued"
 msgstr "A(z) „{}” sorba állítva"
 
 #. TRANSLATORS: {} represents the number of files queued.
-#: src/window.py:400
-msgid "{} Videos Queued"
-msgstr "{} videó sorba állítva"
+#: src/window.py:417
+#| msgid "{} Videos Queued"
+msgid "{} Video Queued"
+msgid_plural "{} Videos Queued"
+msgstr[0] "{} videó sorba állítva"
+msgstr[1] "{} videó sorba állítva"
 
-#: src/window.py:533
+#: src/window.py:553
 msgid "Stop Compression?"
 msgstr "Leállítja a tömörítést?"
 
 #. TRANSLATORS: {} represents the filename of the video currently
 #. being compressed.
-#: src/window.py:536
+#: src/window.py:556
 msgid "Progress made compressing “{}” will be permanently lost"
 msgstr "A(z) „{}” tömörítésével elért folyamat véglegesen el fog veszni"
 
-#: src/window.py:542
+#: src/window.py:562
 msgid "_Cancel"
 msgstr "_Mégse"
 
-#: src/window.py:543
+#: src/window.py:563
 msgid "_Stop"
 msgstr "_Leállítás"
 
-#: src/window.py:597
+#: src/window.py:617
 msgid "Compression Complete"
 msgstr "A tömörítés befejeződött"
 
-#. TRANSLATORS: {} represents the filename of the video that has
-#. been processed.
-#: src/window.py:604
+#. TRANSLATORS: {} represents the filename of the video that
+#. has been processed.
+#: src/window.py:623
 msgid "“{}” processed"
 msgstr "A(z) „{}” feldolgozva"
 
 #. TRANSLATORS: {} represents the number of files that have been
 #. processed.
-#: src/window.py:609
-msgid "{} files processed"
-msgstr "{} fájl feldolgozva"
+#: src/window.py:628
+#| msgid "{} files processed"
+msgid "{} file processed"
+msgid_plural "{} files processed"
+msgstr[0] "{} fájl feldolgozva"
+msgstr[1] "{} fájl feldolgozva"
 
-#: src/window.py:620
+#: src/window.py:641
 msgid "Open Export Directory"
 msgstr "Exportálási könyvtár megnyitása"
 
-#: src/window.py:696
+#: src/window.py:717
 msgid "Videos are being compressed"
 msgstr "A videók tömörítés alatt vannak"
 
-#: src/window.py:716
+#: src/window.py:737
 msgid "Analyzing…"
 msgstr "Elemzés…"
 
 #. TRANSLATORS: {} represents the filename of the video with
 #. the error.
-#: src/window.py:811
+#: src/window.py:832
 msgid "Error compressing “{}”"
 msgstr "Hiba a(z) „{}” tömörítésekor"
 
-#: src/window.py:814
+#: src/window.py:835
 msgid "View _Details"
 msgstr "_Részletek megtekintése"
 
-#: src/window.py:849
+#: src/window.py:874
 msgid "Compression complete"
 msgstr "A tömörítés befejeződött"
 
 #. TRANSLATORS: {} is the description of a mime type.
-#: src/window.py:960
+#: src/window.py:985
 msgid "Unknown video format “{}”"
 msgstr "Ismeretlen videoformátum: „{}”"
 
-#: src/window.py:991
+#: src/window.py:1016
 msgid "Videos"
 msgstr "Videók"
 
-#: src/window.py:994
+#: src/window.py:1019
 msgid "Pick Videos"
 msgstr "Videók kiválasztása"
