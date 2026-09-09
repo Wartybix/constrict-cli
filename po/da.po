@@ -1,16 +1,16 @@
 # Danish translation for Constrict.
 # Copyright (C) 2026 Constrict's COPYRIGHT HOLDER
 # This file is distributed under the same license as the Constrict package.
-# Alan Mortensen <alanmortensen.am@gmail.com>,  2026.
+# Alan Mortensen <over.tackiness223@passinbox.com>,  2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Constrict main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Constrict/-/issues\n"
-"POT-Creation-Date: 2026-02-13 14:25+0000\n"
-"PO-Revision-Date: 2026-03-10 18:59+0100\n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
-"Language-Team: Danish <Danish>\n"
+"POT-Creation-Date: 2026-07-01 05:48+0000\n"
+"PO-Revision-Date: 2026-08-27 19:01+0200\n"
+"Last-Translator: Alan Mortensen <over.tackiness223@passinbox.com>\n"
+"Language-Team: Danish <danskgruppen@groups.io>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: data/io.github.wartybix.Constrict.desktop.in:2
 #: data/io.github.wartybix.Constrict.metainfo.xml.in:8 src/window.blp:16
-#: src/window.blp:42 src/window.blp:104 src/window.py:391
+#: src/window.blp:42 src/window.blp:104 src/window.py:410
 msgid "Constrict"
 msgstr "Constrict"
 
@@ -184,8 +184,8 @@ msgstr "Den komprimerede filstørrelse var for stor ({size} {unit})"
 
 #. TRANSLATORS: this is the SI unit for 'mebibyte'.
 #: src/attempt_fail_box.py:95 src/attempt_fail_box.py:105
-#: src/sources_row.py:498 src/sources_row.py:527 src/sources_row.py:530
-#: src/sources_row.py:545 src/window.py:246
+#: src/sources_row.py:508 src/sources_row.py:537 src/sources_row.py:540
+#: src/sources_row.py:555 src/window.py:256
 msgid "MiB"
 msgstr "MiB"
 
@@ -196,7 +196,7 @@ msgstr "MiB"
 msgid "Compressed file size was too small ({size} {unit})"
 msgstr "Den komprimerede filstørrelse var for lille ({size} {unit})"
 
-#: src/constrict_utils.py:781
+#: src/constrict_utils.py:821
 msgid ""
 "Constrict: Could not read input file. Was it moved or deleted before "
 "compression?"
@@ -204,7 +204,7 @@ msgstr ""
 "Constrict: Kunne ikke læse inputfilen. Er den blevet flyttet eller slettet "
 "før komprimering?"
 
-#: src/constrict_utils.py:804
+#: src/constrict_utils.py:845
 msgid ""
 "Constrict: Could not retrieve video properties. Source video may be missing "
 "or corrupted."
@@ -214,7 +214,7 @@ msgstr ""
 
 #. This should never happen if a unique file name has been passed to
 #. this function as file_output.
-#: src/constrict_utils.py:811
+#: src/constrict_utils.py:852
 msgid ""
 "Constrict: Could not create exported file. A file with the reserved name "
 "already exists."
@@ -222,7 +222,7 @@ msgstr ""
 "Constrict: Kunne ikke oprette eksporteret fil. Der findes allerede en fil "
 "med det reserverede navn."
 
-#: src/constrict_utils.py:813
+#: src/constrict_utils.py:854
 msgid ""
 "Constrict: Could not create exported file. There are insufficient "
 "permissions to create a file at the requested export path."
@@ -230,7 +230,7 @@ msgstr ""
 "Constrict: Kunne ikke oprette eksporteret fil. Der er ikke tilstrækkelige "
 "rettigheder til at oprette en fil på den ønskede eksportsti."
 
-#: src/constrict_utils.py:879
+#: src/constrict_utils.py:921
 msgid ""
 "Constrict: Video bitrate got too low (<5 kbps). The target size may be too "
 "low for this file."
@@ -238,7 +238,7 @@ msgstr ""
 "Constrict: Videobithastigheden blev for lav (<5 kbps). Målstørrelsen er "
 "muligvis for lav for denne fil."
 
-#: src/constrict_utils.py:924
+#: src/constrict_utils.py:966
 msgid ""
 "Constrict: Cannot read output file. Was it moved or deleted mid-compression?"
 msgstr ""
@@ -389,27 +389,30 @@ msgid "compressed"
 msgstr "komprimeret"
 
 #. TRANSLATORS: Braces represent the name of the repository (e.g. 8mb)
-#: src/main.py:184
+#. This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:186
 msgid "‘{}’ repository by"
 msgstr "“{}”-arkiv af"
 
-#: src/main.py:191
+#. TRANSLATORS: This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:194
 msgid "Circular progress indicator design by"
 msgstr "Cirkulær forløbsindikator designet af"
 
-#: src/main.py:195
+#. TRANSLATORS: This string is a heading of a list of names (i.e. credits section)
+#: src/main.py:199
 msgid "Drag overlay design by"
 msgstr "Trækoverlejring designet af"
 
 #. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-#: src/main.py:202
+#: src/main.py:206
 msgid "translator-credits"
 msgstr ""
 "Alan Mortensen\n"
 "\n"
 "Dansk-gruppen\n"
-"Websted http://dansk-gruppen.dk\n"
-"E-mail <dansk@dansk-gruppen.dk>"
+"Websted https://l10n.gnome.org/teams/da/\n"
+"E-mail <danskgruppen@groups.io>"
 
 #: src/preferences_dialog.blp:5
 msgid "Preferences"
@@ -419,32 +422,35 @@ msgstr "Indstillinger"
 msgid "Hardware Acceleration"
 msgstr "Hardwareacceleration"
 
-#: src/preferences_dialog.blp:11
-msgid ""
-"Hardware acceleration is only used if your GPU supports encoding with the "
-"selected video codec, and “Extra Quality” is disabled"
-msgstr ""
-"Hardwareacceleration bruges kun, hvis din GPU understøtter den valgte "
-"videokodning, og “Ekstra kvalitet” er deaktiveret."
-
-#: src/preferences_dialog.blp:14
+#: src/preferences_dialog.blp:13
 msgid "GPU Encoding"
 msgstr "GPU-kodning"
 
-#: src/preferences_dialog.blp:15
+#: src/preferences_dialog.blp:14
 msgid "Use the GPU to speed up encoding when available"
 msgstr ""
 "Brug GPU'en til at forøge hastigheden på kodningen, hvis den er tilgængelig"
 
-#: src/preferences_dialog.blp:20
+#: src/preferences_dialog.blp:19
 msgid "Exported Video Suffix"
 msgstr "Suffiks til eksporteret video"
 
-#: src/preferences_dialog.blp:23
+#: src/preferences_dialog.blp:22
 msgid "Custom Suffix"
 msgstr "Tilpasset suffiks"
 
-#: src/preferences_dialog.py:42
+#. TRANSLATORS: {} represents a resolution, like '360p'.
+#: src/preferences_dialog.py:43
+msgid ""
+"Hardware acceleration is only used if your GPU supports encoding with the "
+"selected video codec. Additionally, it’s only used when compressing to {} or "
+"higher, with “Extra Quality” disabled."
+msgstr ""
+"Hardwareacceleration bruges kun, hvis din GPU understøtter den valgte "
+"videokodning. Den bruges desuden kun, når der komprimeres til {} eller "
+"højere, og “Ekstra kvalitet” er deaktiveret."
+
+#: src/preferences_dialog.py:49
 msgid ""
 "Used in file names for exported videos, between the base name and extension. "
 "If the custom suffix is left empty, the default suffix of “{}” will be used."
@@ -453,7 +459,7 @@ msgstr ""
 "filendelsen. Hvis det brugerdefinerede suffiks efterlades tomt, vil "
 "standardsuffikset “{}” blive brugt."
 
-#: src/preferences_dialog.py:64
+#: src/preferences_dialog.py:71
 msgid "Changes applied"
 msgstr "Ændringer udført"
 
@@ -473,7 +479,7 @@ msgstr "Flyt _ned"
 msgid "_Remove"
 msgstr "F_jern"
 
-#: src/sources_row.blp:44 src/sources_row.blp:57 src/sources_row.py:448
+#: src/sources_row.blp:44 src/sources_row.blp:57 src/sources_row.py:458
 msgid "View Error Details"
 msgstr "Vis fejldetaljer"
 
@@ -497,13 +503,14 @@ msgstr "Vis filplacering"
 msgid "View More"
 msgstr "Vis mere"
 
-#: src/sources_row.py:471 src/window.blp:137 src/window.blp:218
+#: src/sources_row.py:481 src/window.blp:137 src/window.blp:200
+#: src/window.blp:240
 msgid "More Information"
 msgstr "Flere oplysninger"
 
 #. TRANSLATORS: {size} represents a file size value in MB.
 #. {unit} represents a file size unit, like 'MiB'.
-#: src/sources_row.py:495
+#: src/sources_row.py:505
 #, python-brace-format
 msgid "Video compressed to {size} {unit}."
 msgstr "Video komprimeret til {size} {unit}."
@@ -511,7 +518,7 @@ msgstr "Video komprimeret til {size} {unit}."
 #. TRANSLATORS: {original_size} and {target_size} represent
 #. integers. {unit_original} and {unit_target} represent file
 #. size units, like 'MB'.
-#: src/sources_row.py:523
+#: src/sources_row.py:533
 #, python-brace-format
 msgid ""
 "Video file size ({original_size} {unit_original}) already meets the target "
@@ -522,7 +529,7 @@ msgstr ""
 
 #. TRANSLATORS: {size} represents an integer. {unit} represents
 #. a file size unit like 'MB'.
-#: src/sources_row.py:543
+#: src/sources_row.py:553
 #, python-brace-format
 msgid "Target size ({size} {unit}) is too low for this file."
 msgstr "Målstørrelsen ({size} {unit}) er for lille til denne fil."
@@ -580,63 +587,63 @@ msgstr "Sørg for jævnere bevægelse"
 msgid "Encoding Options"
 msgstr "Kodningsindstillinger"
 
-#: src/window.blp:198
+#: src/window.blp:220
 msgid "_Video Codec"
 msgstr "_Videokodning"
 
-#: src/window.blp:206
+#: src/window.blp:228
 msgid "Extra _Quality"
 msgstr "Ekstra _kvalitet"
 
-#: src/window.blp:208
+#: src/window.blp:230
 msgid "Increase image quality at the cost of compression time"
 msgstr "Forbedr billedkvaliteten på bekostning af komprimeringstiden"
 
-#: src/window.blp:213
+#: src/window.blp:235
 msgid "Advanced Options"
 msgstr "Avancerede indstillinger"
 
-#: src/window.blp:238
+#: src/window.blp:260
 msgid "_Tolerance (%)"
 msgstr "_Tolerance (%)"
 
-#: src/window.blp:240
+#: src/window.blp:262
 msgid "How far end file sizes can be below target"
 msgstr "Hvor meget filstørrelserne kan være under målet"
 
-#: src/window.blp:264
+#: src/window.blp:286
 msgid "Toggle Settings Pane"
 msgstr "Slå indstillingspanel til/fra"
 
-#: src/window.blp:274
+#: src/window.blp:296
 msgid "Issues with video sources — fix before compressing"
 msgstr "Problemer med videokilder — løs før komprimering"
 
-#: src/window.blp:300
+#: src/window.blp:322
 msgid "Video Sources"
 msgstr "Videokilder"
 
-#: src/window.blp:304
+#: src/window.blp:326
 msgid "_Clear All"
 msgstr "_Ryd alt"
 
-#: src/window.blp:325
+#: src/window.blp:347
 msgid "_Export To…"
 msgstr "_Eksportér til …"
 
-#: src/window.blp:341
+#: src/window.blp:363
 msgid "_Cancel…"
 msgstr "_Annullér …"
 
 #. TRANSLATORS: 'FPS' meaning 'frames per second'.
 #. {} represents the FPS value, for example 30 or 60.
-#: src/window.py:224
+#: src/window.py:230
 msgid "{} FPS"
 msgstr "{} FPS"
 
 #. TRANSLATORS: FPS meaning 'frames per second'. {} represents an
 #. integer.
-#: src/window.py:232
+#: src/window.py:238
 msgid ""
 "Videos compressed to low bitrates may be capped to {} FPS, regardless of the "
 "option set."
@@ -644,8 +651,19 @@ msgstr ""
 "Videoer, der komprimeres til lave bithastigheder, kan være begrænset til {} "
 "FPS, uanset hvilken indstilling der er valgt."
 
+#: src/window.py:243
+msgid ""
+"H.264 is recommended for resolutions up to 1080p.\n"
+"\n"
+"H.265 (HEVC), AV1, and VP9, are optimized for resolutions of 1080p and "
+"higher."
+msgstr ""
+"H.264 anbefales til opløsninger op til 1080p.\n"
+"\n"
+"H.265 (HEVC), AV1 og VP9 er optimeret til opløsninger på 1080p og derover."
+
 #. TRANSLATORS: {} represents an integer.
-#: src/window.py:241
+#: src/window.py:251
 #, no-python-format
 msgid ""
 "Decreasing the tolerance maximizes image quality by reducing how much "
@@ -659,110 +677,115 @@ msgstr ""
 "komprimeringstiden. En tolerance på {} % eller mere anbefales."
 
 #. TRANSLATORS: {} represents a file size unit (e.g. 'MiB')
-#: src/window.py:249
+#: src/window.py:259
 msgid "Target _Size ({})"
 msgstr "Mål_størrelse ({})"
 
-#. TRANSLATORS: {} represents the filename of the video currently
+#. TRANSLATORS: {} represents the file name of the video currently
 #. being processed.
-#: src/window.py:365
+#: src/window.py:382
 msgid "Processing “{}”"
 msgstr "Behandler “{}”"
 
-#. TRANSLATORS: {index} represents the index of the video
-#. currently being processed. {total} represents the total
+#. TRANSLATORS: {index} represents the index of
+#. the video currently being processed. {total} represents the total
 #. number of videos being processed.
-#: src/window.py:371
+#: src/window.py:390
 #, python-brace-format
-msgid "{index}/{total} Videos Processed"
-msgstr "{index}/{total} videoer behandlet"
+msgid "{index}/{total} Video Processed"
+msgid_plural "{index}/{total} Videos Processed"
+msgstr[0] "{index}/{total} video behandlet"
+msgstr[1] "{index}/{total} videoer behandlet"
 
 #. TRANSLATORS: {} represents the path of the directory being
 #. exported to.
-#: src/window.py:381
+#: src/window.py:400
 msgid "Exporting to {}"
 msgstr "Eksporterer til {}"
 
-#. TRANSLATORS: {} represents the filename of the video currently
-#. queued.
-#: src/window.py:396
+#. TRANSLATORS: {} represents the name of a video file.
+#: src/window.py:413
 msgid "“{}” Queued"
 msgstr "“{}” i kø"
 
 #. TRANSLATORS: {} represents the number of files queued.
-#: src/window.py:400
-msgid "{} Videos Queued"
-msgstr "{} videoer i kø"
+#: src/window.py:417
+msgid "{} Video Queued"
+msgid_plural "{} Videos Queued"
+msgstr[0] "{} video i kø"
+msgstr[1] "{} videoer i kø"
 
-#: src/window.py:533
+#: src/window.py:553
 msgid "Stop Compression?"
 msgstr "Stop komprimering?"
 
 #. TRANSLATORS: {} represents the filename of the video currently
 #. being compressed.
-#: src/window.py:536
+#: src/window.py:556
 msgid "Progress made compressing “{}” will be permanently lost"
 msgstr "Fremskridt gjort med komprimering af “{}” vil gå tabt permanent."
 
-#: src/window.py:542
+#: src/window.py:562
 msgid "_Cancel"
 msgstr "_Annullér"
 
-#: src/window.py:543
+#: src/window.py:563
 msgid "_Stop"
 msgstr "_Stop"
 
-#: src/window.py:597
+#: src/window.py:617
 msgid "Compression Complete"
 msgstr "Komprimering afsluttet"
 
-#. TRANSLATORS: {} represents the filename of the video that has
-#. been processed.
-#: src/window.py:604
+#. TRANSLATORS: {} represents the filename of the video that
+#. has been processed.
+#: src/window.py:623
 msgid "“{}” processed"
 msgstr "“{}” behandlet"
 
 #. TRANSLATORS: {} represents the number of files that have been
 #. processed.
-#: src/window.py:609
-msgid "{} files processed"
-msgstr "{} filer behandlet"
+#: src/window.py:628
+msgid "{} file processed"
+msgid_plural "{} files processed"
+msgstr[0] "{} fil behandlet"
+msgstr[1] "{} filer behandlet"
 
-#: src/window.py:620
+#: src/window.py:641
 msgid "Open Export Directory"
 msgstr "Åbn mappe til eksport"
 
-#: src/window.py:696
+#: src/window.py:717
 msgid "Videos are being compressed"
 msgstr "Videoer komprimeres"
 
-#: src/window.py:716
+#: src/window.py:737
 msgid "Analyzing…"
 msgstr "Analyserer …"
 
 #. TRANSLATORS: {} represents the filename of the video with
 #. the error.
-#: src/window.py:811
+#: src/window.py:832
 msgid "Error compressing “{}”"
 msgstr "Fejl ved komprimering af “{}”"
 
-#: src/window.py:814
+#: src/window.py:835
 msgid "View _Details"
 msgstr "Vis _detaljer …"
 
-#: src/window.py:849
+#: src/window.py:874
 msgid "Compression complete"
 msgstr "Komprimering afsluttet"
 
 #. TRANSLATORS: {} is the description of a mime type.
-#: src/window.py:960
+#: src/window.py:985
 msgid "Unknown video format “{}”"
 msgstr "Ukendt videoformat “{}”"
 
-#: src/window.py:991
+#: src/window.py:1016
 msgid "Videos"
 msgstr "Videoer"
 
-#: src/window.py:994
+#: src/window.py:1019
 msgid "Pick Videos"
 msgstr "Vælg videoer"
